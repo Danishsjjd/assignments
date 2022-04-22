@@ -1,0 +1,142 @@
+/*variable start*/
+
+:root{
+    --per:white;
+    --sec:black;
+    --third:rgb(223, 223, 223);
+    --forth:rgb(192, 192, 192);
+}
+.darkmode{
+    --per:rgb(34, 34, 34);
+    --sec:white;
+    --third:rgb(51, 51, 51);
+    --forth:rgb(192, 192, 192);
+}
+/* variable end */
+
+/* starting of css reset  */
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--third);
+    color:var(--sec);
+    font-family: 'Open Sans', sans-serif;
+}
+/* Ending of css reset */
+
+/* starting of header */
+header{
+    background-color:var(--per) ;
+    height: 80px;
+}
+i {
+    padding-right: 5px;
+}
+nav div{
+    float: left;
+    width: 50%;
+    line-height: 80px;
+}
+nav #button-div{
+    text-align: right;
+}
+nav img{
+    vertical-align: middle;
+    width: 212px;
+    animation: img 1.5s ease-in-out;
+}
+@keyframes img {
+    from{
+        margin:0px -100px;
+    }
+}
+
+/* ending of header */
+
+
+/* starting of main content */
+main{
+    min-height: calc(100vh - 120px);
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+section h2{
+    margin-bottom: 40px !important;
+}
+
+table{
+    width: 100%;
+    animation: table 1.5s ease-in-out;
+}
+@keyframes table {
+    from{
+        transform: scale(0.8);
+    }
+}
+table td, table th{
+    text-align: center;
+    padding: 15px 5px;
+}
+table th{
+    font-weight: 700;
+}
+table,tr,th,td{
+    border:thin solid var(--forth);
+    border-collapse: collapse;
+}
+/* ending of main */
+
+
+
+
+/* starting of footer  */
+footer{
+    background-color: var(--per);
+    height: 40px;
+    line-height: 40px;
+}
+/* footer */
+
+/* uitility classes  */
+/* starting of button  */
+.btn{
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--sec);
+    color: var(--per);
+    user-select: none;
+    -webkit-user-select:none ;
+    -moz-user-select: none;
+    font-size: 1rem;
+    animation: btn 1s ease-in-out;
+    font-weight: 400;
+}
+@keyframes btn {
+    from{
+        margin: -100px;
+    }
+}
+.btn:hover{
+    color:var(--sec);
+    background-color:var(--per) ;
+    border: 2px solid var(--sec);
+}
+/* ending of button */
+.center{
+    margin:auto;
+    width:70%;
+}
+.text-center{
+    text-align: center;
+}
+.m-0 {
+margin:0px;
+}
+  

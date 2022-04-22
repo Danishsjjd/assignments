@@ -1,0 +1,317 @@
+/* starting CSS reset */
+*{
+    
+    scroll-behavior: smooth;
+}
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Raleway', sans-serif;
+}
+:root{
+    --main:#0eb4ba;
+    --white:rgb(255, 255, 255);
+    --active:#20a5bd;
+    --black:black;
+    --mainhead:#1a6a86;
+    --border:rgb(199, 199, 199);
+    --fadewhite:rgb(245,245,245);
+    --imgborder:rgb(64, 64, 64);
+}
+/* ending of css reset  */
+
+/* starting of header */
+header{
+    user-select: none;
+    -webkit-user-select: none;
+height: 40px;
+background-color: var(--main);
+display: flex;
+}
+header a:active{
+    color:var(--white) !important;
+}
+header >div{
+    line-height: 30px;
+    color:var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+header .icons a{
+    color:var(--white);
+}
+header .icons i {
+    margin: 0px 5px;
+    font-size: 1.2rem;
+}
+header .contact i{
+    margin: 0px 6px;
+    font-size: 1.2rem;
+}
+header .contact span{
+    font-size: 0.9rem;
+}
+header .contact a{
+    color:var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+}
+/* ending of header */
+
+/* starting of navbar */
+nav{
+    position: sticky;
+    top:0px;
+    background-color: var(--white);
+    height: 60px;
+    display: flex;
+}
+
+nav div.container{
+    display: flex;
+    justify-content: space-between;
+}
+nav div.container div.logo{   
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+nav div ul{
+    user-select: none;
+    -webkit-user-select: none;
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    display: flex;
+}
+nav div ul li{
+    margin: 10px 1px;
+    padding:12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav div ul li:hover{
+    background-color: var(--active);
+    color:var(--white);
+}
+nav div ul li.active{
+    background-color: var(--active);
+    color:var(--white)
+}
+nav div ul li.visaitem:hover .visaop {
+    display: block;
+}
+nav div ul li.visaitem{
+    position: relative;
+}
+nav .navigation .visaop{
+    flex-direction: column;
+    background-color: var(--main);
+    position: absolute;
+    top:30px;
+    left: -23px;
+    width: 120px;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+nav .container .logo{
+    display: flex;
+    flex-direction: row !important;
+}
+nav .navigation .visaop li:hover{
+    background-color: var(--active);
+}
+nav .container .logo img{
+    margin:0px 7px;
+    padding-right:5px ;
+    border-right: 1.5px solid var(--black);
+    margin-top:-4px;
+}
+nav .container .logo .items{
+    margin-left: -4px;
+}
+nav .container .logo .items span{
+    color:var(--mainhead);
+    font-weight: 700;
+    font-size: 1rem;
+}
+/* ending of navbar */
+
+/* starting of main */
+main div.backimg{
+    height:500px;
+    background: url(../img/backimg.jpg) center center/cover;
+}
+
+main div.container{
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+}
+main div.container div.data{
+    border:thin solid var(--border);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-right: 15px;
+}
+main div.container .ourmission h4{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+main div.container div.data p{
+    margin: 10px 5px;
+    font-size: clamp(12px,0.985vw,1rem);
+}
+main div.container div.center{
+    border:1px solid var(--border);
+    padding:10px;
+    /* width: 405px; */
+    box-sizing: border-box;
+}
+main div.container div.sideimg h3{
+    font-weight: 500;
+    font-size: 1.36rem;
+    margin-top:4px;
+    margin-bottom: 10px;
+}
+main div.container div.sideimg p{
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+main div.container div.center img{
+    border:2px solid var(--imgborder);
+    width: 100%;
+    margin-left:-2px;
+    height: 216px;
+}
+main div.container .center{
+    padding:4px;
+    margin:3px;
+}
+/* ending of main */
+/* starting of footer */
+footer{
+    margin:7px 0px;
+    padding:20px;
+    background-color: var(--main);
+    color: var(--white);
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:visited{
+    color:white;
+}
+footer .container .pad{
+    display: flex;
+}
+footer .container ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+footer .container .pad > div {
+    width: 30%;
+}
+footer .container .pad h4{
+    border-bottom: 1px solid var(--white);
+    margin:0px 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-bottom: 7px;
+}
+footer .container .pad ul li {
+    padding-top: 13px;
+    padding-left: 25px;
+    font-size: 1rem;
+}
+/* ending of footer */
+/* last footer */
+.text-size{
+    font-weight: 400;
+    font-size: .9rem;
+    margin-bottom: 5px !important;
+
+}
+/* starting of media quarry  */
+@media screen and (max-width:1290px) {
+    nav div.container div.logo , nav div.container div.navigation{
+        font-size: 0.77rem;
+        font-weight: 500;
+        margin: 0px;
+
+    }
+    nav div.container div.navigation ul{
+        margin-right: -117px;
+    }
+    nav div.container div.logo div.items span{
+        margin-top:3px;
+    }
+    nav .container .logo img{
+        margin-top: 2px;
+    }
+}
+/* ending of media quarry  */
+
+/* Global item */
+
+.container{
+    width: 80%;
+    margin:auto;
+}
+.mp-0{
+    margin: 0px;
+    padding: 0px;
+}
+.m-0{
+    margin: 0px;
+}
+.text-center{
+    text-align: center;
+}
+.pad{
+    padding:5px;
+}
+/* btn */
+.btn{
+    background-color:var(--active);
+    color:var(--white);
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+}
+.btn:active{
+    background-color:var(--active);
+    color:var(--white);
+}
+.btn:visited{
+    background-color:var(--active);
+    color:var(--white);
+}
+.btn1{
+    background-color:var(--fadewhite);
+    border: 1px solid var(--border);
+    color:var(--black);
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+
+}
+.btn1:active{
+    background-color:var(--active);
+    color:var(--white);
+}
+
+    

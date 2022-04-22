@@ -1,0 +1,22 @@
+#btn{
+    background-color: white;
+    color: black;
+}
+/* for header  */
+.header{
+    background-color:rgb(34, 34, 34) ;
+}
+body{
+    background-color: rgb(51, 51, 51);
+}
+div.footer{
+    background-color: rgb(24, 24, 24);
+}
+/* table */
+table , tr ,td,th{
+    border:thin solid rgb(192, 192, 192);
+    border-collapse: collapse;
+}
+body{
+    color: white;
+}

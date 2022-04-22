@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.height_custom{
+    min-height: calc(100vh - 298px);
+}
+.border_custom{
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    min-height: 80px;
+    padding: 15px;
+}
+.padd_cus{
+    padding:40px
+}
+.result{
+    text-align: center;
+}
+
+/* Global */
+p{
+    margin-bottom: 0px !important;
+}
+.bg_cus{
+    background-color: #1D3557 !important;
+}
+.btn_cus{
+    background-color: #E63946;
+    border-radius: 7px;
+    border:none;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+}
+.btn_cus:hover{
+    background-color: #c92f3c;
+}
+.text-left{
+    text-align: left !important;
+}

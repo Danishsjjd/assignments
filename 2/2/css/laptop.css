@@ -1,0 +1,13 @@
+/* header  */
+.header img{
+    margin: 10px 39px;
+    width: 187px ;
+}
+/* table  */
+table td, table th{
+    padding: 2px;
+}
+/* uitility classes  */
+#btn{
+    margin:16px 23px;
+}

@@ -1,0 +1,59 @@
+/* css reset  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* header */
+.header img{
+    margin: 13px 84px;
+    width: 212px;
+}
+
+/* table */
+.sech{
+    font-size: x-large;
+    margin: 40px;
+}
+
+table td, table th{
+    text-align: center;
+    padding: 5px;
+}
+table th{
+    font-weight: 700;
+}
+
+/* button  */
+#btn{
+    float: right;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 22px 110px;
+    border-radius: 4px;
+}
+.center{
+    margin:auto;
+    width:70%;
+}
+/* footer  */
+.footer{
+    background-color: rgb(230, 230, 230);
+    position:absolute;
+    width: 100%;
+    bottom: 0px;
+}
+@media screen and (max-width:1215px){
+    .footer{
+        position:static;
+    }
+}
+
+/* uitility classes  */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+  

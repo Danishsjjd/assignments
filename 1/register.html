@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <th><a href="index.html"><img src="sylani pic.jpeg"></a> </th>
+                <th> <a href="index.html">Home</a></th>
+                <th> <a href="About.html">About</a></th>
+                <th> <a href="Gallery.html">Gallery</a></th>
+                <th><a href="Media.html">Media</a></th>
+                <th> <a href="Contact.html">Contact</a></th>
+                <th> <a href="login.html">login</a></th>
+                <th> <a href="register.html">register</a></th>
+            </tr>
+        </table>
+    </center>
+    <center> <hr>
+        <h1 class="center">This is Register page</h1>
+        <hr>
+        <h2>Please Register to continue</h2>
+        <p>All the fields are required.</p>
+        <hr>
+    </center>
+    <div class="item-center">
+        <form action="beckend.php"method="post">
+            <fieldset style="width: fit-content;">
+                <legend>Register</legend>
+                <label>
+                    Full Name: <br>
+                    <input type="text" required name="" placeholder="Full Name" id="">
+                </label><br>
+                <label>
+                    Email: <br>
+                    <input type="text" required name="" placeholder="Email" id="">
+                </label><br>
+                <label>
+                    Password: <br><input required type="password" name="" placeholder="Password" id="">
+                </label><br> <br>
+                <label>
+                    Gender: <br>
+                    <label for="male">Male</label> <input type="radio"  id="male"name="gender"value="male" checked>
+                  <label for="female">Female</label>  <input type="radio" name="gender" id="female" value="female">
+                  <br> <br>
+                </label>
+                
+                Hobbies: <br>
+                <label for="music">Music</label>
+                <input type="checkbox" name="hobbies" id="music">
+                <label for="art">Art</label>
+                <input type="checkbox" name="hobbies" id="art">
+                <label for="painting">Painting</label>
+                <input type="checkbox" name="hobbies" id="painting">
+                <br>
+                <br>
+                
+                <p style="margin: 3px;">Country</p>
+                <select name="country" id="country">
+                    <option value="pakistan">Pakistan</option>
+                    <option value="china">china</option>
+                    <option value="US">US</option>
+                    <option value="chose your country" disabled selected>Chose your country</option>
+                </select>
+                <br> <br>
+                <span>DOB</span>
+                <input type="datetime-local">
+                <br> <br>
+                <p style="margin:0px">upload your photo</p>
+                <input type="file" name="photo" id="photo">
+                <br> <br>
+                <button type="submit">Register</button>
+                <br> <br>
+                <a href="login.html">Already a user?</a>
+        </form>
+    </div>
+        <hr>
+        <center><footer class="center">
+            copyright &copy; 2021.All rights reserved
+        </footer>
+    </center>
+</body>
+
+</html>

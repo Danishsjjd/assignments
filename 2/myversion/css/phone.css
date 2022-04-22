@@ -1,0 +1,65 @@
+header {
+    height: 60px;
+}
+
+section h2 {
+    font-size: 0.8rem;
+}
+
+nav div {
+    line-height: 60px;
+}
+
+nav img {
+    position: relative;
+    right: 40px;
+    width: 120px;
+}
+
+.btn {
+    font-size: 0.8em;
+    position: relative;
+    left: 40px;
+}
+
+body {
+    font-size: 0.8em;
+}
+
+table td:before {
+    font-weight: 400;
+    font-size: 0.9rem;
+    top: 4px;
+    left: -4px;
+}
+
+table .non-empty {
+    padding: 5px;
+    font-size: 10px;
+}
+
+table .empty {
+    font-size: 10px;
+}
+.empty:after{
+    right: 5px !important;
+}
+
+table tbody th {
+    font-size: 0.7rem;
+    padding: 5px 2px;
+}
+
+.more-pad1:before {
+    top: 10px;
+}
+
+.more-pad2:before {
+    top: 10px;
+
+}
+
+.more-pad3:before {
+    top: 30px;
+
+}

@@ -1,0 +1,85 @@
+table thead {
+    display: none;
+}
+
+table tbody,
+table tr,
+table td,
+table th {
+    display: block;
+    width: 100%;
+}
+
+table tr {
+    margin: 10px 0px;
+}
+
+table tbody tr td {
+    padding: 5px !important;
+    text-align: right;
+    position: relative;
+}
+
+table,
+table th {
+    border: none;
+}
+
+table tr {
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+table td:before {
+    content: ""attr(data-label)"";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+table .empty {
+    text-align: right;
+    position: relative;
+}
+
+table .empty::after {
+    content: "empty";
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    top: 2px;
+
+}
+
+table {
+    border: none;
+}
+
+.empty {
+    padding: 13px 0px !important;
+}
+
+table tbody tr th {
+    background-color: rgb(255, 10, 66);
+    border-radius: 5px;
+}
+
+table tbody th {
+    color: white;
+}
+.more-pad1:before {
+    top: 15px;
+}
+
+.more-pad2:before {
+    top: 15px;
+
+}
+
+.more-pad3:before {
+    top: 50px;
+}
